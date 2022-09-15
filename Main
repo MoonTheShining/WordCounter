@@ -1,0 +1,37 @@
+using System;
+
+namespace PROJECT
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+
+            Console.WriteLine("Please write a sentence");
+
+            string sentence= Console.ReadLine();
+
+            int result = CountWords(sentence);
+
+            Console.WriteLine("There are " + result + " words in that sentence");
+        
+
+
+
+            Console.ReadLine();
+
+
+        } 
+        static int CountWords(string p_sentence)
+        {
+            int WordCount =  p_sentence.Split(' ').Length;
+
+            return WordCount;            
+            
+        }
+    }
+}
